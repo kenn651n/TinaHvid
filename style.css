@@ -1,0 +1,283 @@
+/**
+Theme Name: Tina Hvid Child Theme
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tina-hvid-child-theme
+Template: astra
+*/
+
+.ast-single-post .entry-title,
+.page-title {
+    display: none;
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+}
+
+
+.produkt_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.produkt_article {
+    margin: 20px;
+}
+
+/*Filterknapper*/
+
+button {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+}
+
+nav {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.filter,
+.alle_knap {
+    padding: 5px 5px 5px 5px;
+}
+
+.filter[data-produkt="29"],
+.filter[data-produkt="25"],
+.filter[data-produkt="27"],
+.filter[data-produkt="31"],
+.filter[data-produkt="28"],
+.filter[data-produkt="26"],
+.filter[data-produkt="39"],
+.filter[data-produkt="40"],
+.filter[data-produkt="31"],
+.filter[data-produkt="41"],
+.filter[data-produkt="30"],
+.filter[data-produkt="32"],
+.filter[data-produkt="33"] {
+    font-size: 0px;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: center;
+    margin: 10px 20px 10px 0px;
+}
+
+.filter[data-produkt="29"] {
+    background-color: #74A9BE;
+}
+
+.filter[data-produkt="25"] {
+    background-color: #F1D95A;
+}
+
+.filter[data-produkt="27"] {
+    background-color: #95DE67;
+}
+
+.filter[data-produkt="31"] {
+    background-color: #DD2626;
+}
+
+.filter[data-produkt="28"] {
+    background-color: #FF8400;
+}
+
+.filter[data-produkt="26"] {
+    background-color: #EFB5C2;
+}
+
+.filter[data-produkt="39"] {
+    background-color: #788196;
+}
+
+.filter[data-produkt="40"] {
+    background-color: #F0F0F0;
+}
+
+.filter[data-produkt="41"] {
+    background-color: turquoise;
+}
+
+.filter[data-produkt="30"] {
+    background-color: white;
+    border: 0.1px solid;
+}
+
+.filter[data-produkt="32"] {
+    background-color: black;
+}
+
+.filter[data-produkt="33"] {
+    background-image: linear-gradient(90deg, rgba(255, 63, 63, 1) 0%, rgba(255, 192, 73, 1) 16%, rgba(168, 255, 57, 1) 31%, rgba(57, 255, 229, 1) 55%, rgba(57, 68, 255, 1) 68%, rgba(255, 57, 251, 1) 82%, rgba(255, 57, 118, 1) 99%);
+    );
+}
+
+.splashbillede {
+    background-image: linear-gradient(180deg, #585189, transparent, transparent);
+}
+
+.filter_icon {
+    max-width: 4%;
+}
+
+.filtrer {
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.filtrer:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.filtrer:focus {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.filtrer:active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+[data-produkt="alle"] {
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+[data-produkt="alle"]:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+[data-produkt="alle"]:focus {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+
+#farver_filtrering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 10px;
+}
+
+#former_filtrering {
+    display: grid;
+    justify-items: left;
+
+}
+
+#stoerrelse_filtrering {
+    display: grid;
+    justify-items: left;
+}
+
+
+#filtrering {
+    display: grid;
+    justify-items: left;
+}
+
+
+
+.galleri_container {
+    padding: 10px;
+    margin: auto;
+}
+
+/*hamburger menu*/
+#elementor-element elementor-element-b02d0f0 elementor-widget__width-auto elementor-widget-mobile__width-auto burgermenu elementor-widget elementor-widget-ekit-nav-menu {
+    color: #2d2d2d;
+}
+
+.hide {
+    display: none;
+}
+
+.produkt_article {
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+
+    .filtrerings_knap {
+        display: none;
+    }
+
+    .galleri_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        max-width: 1140px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .produkt_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 100px;
+    }
+
+    .single_produkt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1140px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .produkt_info {
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 25px;
+    }
+
+    .filter[data-produkt="29"],
+    .filter[data-produkt="25"],
+    .filter[data-produkt="27"],
+    .filter[data-produkt="31"],
+    .filter[data-produkt="28"],
+    .filter[data-produkt="26"],
+    .filter[data-produkt="39"],
+    .filter[data-produkt="40"],
+    .filter[data-produkt="31"],
+    .filter[data-produkt="41"],
+    .filter[data-produkt="30"],
+    .filter[data-produkt="32"],
+    .filter[data-produkt="33"] {
+        font-size: 0px;
+        padding: 10px;
+    }
+
+    #filter_menu {
+        border-right: 1px solid;
+        width: 150px;
+    }
+
+    .hide {
+        display: block;
+    }
+}
